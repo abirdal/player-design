@@ -1,0 +1,131 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 1000px;
+  height: 125px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.container .player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.container .player .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25%;
+}
+
+.container .player .buttons i {
+  font-size: 22px;
+  color: #020202;
+  cursor: pointer;
+  -webkit-transition: 200ms color;
+  transition: 200ms color;
+}
+
+.container .player .buttons i:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  background-color: #dc4442;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.container .player .buttons i:nth-child(2):hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.container .player .buttons i:hover {
+  color: rgba(2, 2, 2, 0.7);
+}
+
+.container .timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.container .timeline p {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .timeline .current-duration {
+  height: 6px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin: 0 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.container .timeline .current-duration::before {
+  content: '';
+  width: 35%;
+  height: 100%;
+  background-color: #dc4442;
+  position: absolute;
+  left: 0;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=stylePlayerDesign.css.map */

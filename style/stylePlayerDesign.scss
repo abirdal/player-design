@@ -1,0 +1,88 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 1000px;
+    height: 125px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0, .3);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    .player{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 25%;
+            i{
+                font-size: 22px;
+                color: #020202;
+                cursor: pointer;
+                transition: 200ms color;
+                &:nth-child(2){
+                    width: 40px;
+                    height: 40px;
+                    background-color: #dc4442;
+                    color: #fff;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 40px;
+                    &:hover{
+                        color: rgba(#fff,.8);
+                    }
+                }
+                &:hover{
+                    color: rgba(#020202,.7);
+                }
+            }
+        }
+    }
+    .timeline{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 15px;
+        p{
+            font-size: 12px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .current-duration{
+            height: 6px;
+            flex-grow: 1;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            margin: 0 15px;
+            position: relative;
+            cursor: pointer;
+            &::before{
+                content: '';
+                width: 35%;
+                height: 100%;
+                background-color: #dc4442;
+                position: absolute;
+                left: 0;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+}
